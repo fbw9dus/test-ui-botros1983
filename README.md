@@ -19,14 +19,28 @@ Projekt für Test im UI Modul
 ![](drafts/desktop.JPG)
 ![](drafts/desktop-button-hover.JPG)
 
-###   __/60 Punkten
+###   40/60 Punkten
 #### Punktabzüge für:
-- [_] (10) Elemente passen sich nicht an Fensterbreite an
+- [x] (10) Elemente passen sich nicht an Fensterbreite an
+```diff
+- Kein Abstand des Formulars zum Fensterrand bei mobile
+- Scrollleiste am unteren Fensterrand
+```
 - [_] (10) Tags nicht geschlossen oder falsch verschachtelt
 - [_] (5) Block-Tag in Inline-Tag
 - [_] (5) Kinder-Tags im Code nicht eingerückt
 - [_] (10) Zweckfremde Tags verwendet
-- [_] (10) Fehlende essetielle Tags (z.B. Meta-Tags)
+- [x] (5) Fehlende essetielle Tags (z.B. Meta-Tags)
+```diff
+- title-Tag fehlt
+- <meta charset="UTF-8"> fehlt
+```
 - [_] (5) Falsche Datei-Pfade
-- [_] (10) CSS-Selektoren, die bei Änderungen im HTML sehr leicht fehlschlagen können
+```diff
+- Die Bilder werden nur geladen, wenn die Seite in einem (Live-)Server läuft. Das ist kein Fehler.
+```
+- [x] (5) CSS-Selektoren, die bei Änderungen im HTML sehr leicht fehlschlagen können
+```diff
+- Der Selektor h1+p ist sehr unzuverlässig, da er nicht mehr funktionieren würde, sobald es mehrere Paragraphen gibt oder ein anderes Element nach h1 steht
+```
 - [_] (5) Fehlende essentielle Tag-Attribute
